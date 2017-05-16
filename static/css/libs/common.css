@@ -99,7 +99,7 @@ a:hover {
 .head .navbar-collapse {
     margin-top: -50px;
     position: absolute;
-    max-width: 1200px;
+    left: 0;
     width: 100%;
     vertical-align: middle;
     text-align: center;
