@@ -592,6 +592,9 @@ a:hover {
     .nav-list {
         margin-left: 0;
     }
+    .qrcode-div {
+        display: none;
+    }
 }
 @media all and (max-width: 1050px){
     .head .navbar-collapse {
@@ -677,9 +680,6 @@ a:hover {
     }
     .header-nav {
         position: relative;
-    }
-    .qrcode-div {
-        display: none;
     }
     .div-footer {
         margin-top: 0;
