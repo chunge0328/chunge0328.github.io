@@ -61,7 +61,7 @@ require(['jquery',"swiper",'lazyload',"bootstrap"], function($,Swiper) {
         swiper.swipePrev()
     })
     // 根据屏幕宽度方法
-    if (document.body.clientWidth > 960) {
+    if (document.body.clientWidth > 950) {
         bannerimg();
         nav();
         if( $(document).height()-window.innerHeight<600) { // 底部动画
@@ -196,7 +196,6 @@ function nav() {
 }
 // 移动端
 function mb() {
-    $('#bs-example-navbar-collapse-1').css('position','relative');
     var newProduct = new Swiper('.newProduct-swiper', { // 移动端根据屏幕宽度初始化swiper
         pagination: '.newProduct-pagination',
         paginationClickable: true,

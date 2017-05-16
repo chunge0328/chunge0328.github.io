@@ -618,18 +618,6 @@ a:hover {
         width: 100%;
         font-size: 14px;
     }
-    .nav-right-button .btn-group .glyphicon-user {
-        border-radius: 0;
-    }
-    .nav-right-button .btn-group .glyphicon-menu-hamburger {
-        display: block;
-        border: none;
-    }
-    .nav-right-button .btn-group .dropdown-menu {
-        width: 100%;
-        right: 0;
-        left: auto;
-    }
     .top-ms {
         background: #000;
         height: 102px;
@@ -690,6 +678,21 @@ a:hover {
     .head .navbar-collapse {
         margin-top: 0;
         font-size: 14px;
+    }
+    #bs-example-navbar-collapse-1 {
+        position: relative;
+    }
+    .nav-right-button .btn-group .glyphicon-user {
+        border-radius: 0;
+    }
+    .nav-right-button .btn-group .glyphicon-menu-hamburger {
+        display: block;
+        border: none;
+    }
+    .nav-right-button .btn-group .dropdown-menu {
+        width: 100%;
+        right: 0;
+        left: auto;
     }
 }
 @media all and (max-width: 400px) {
