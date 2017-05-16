@@ -164,6 +164,14 @@ function nav() {
             });
         }
     })
+    $('#newProduct-l').on('click', function(e){ // 左边切换
+        e.preventDefault()
+        newProduct.swipePrev()
+    });
+    $('#newProduct-r').on('click', function(e) { // 右边切换
+        e.preventDefault();
+        newProduct.swipeNext()
+    })
     $(".up-top").click(function () { // 回到顶部
         $('body,html').animate({ scrollTop: 0 }, 200);
         return false;
@@ -188,6 +196,7 @@ function nav() {
 }
 // 移动端
 function mb() {
+    $('#bs-example-navbar-collapse-1').css('position','relative');
     var newProduct = new Swiper('.newProduct-swiper', { // 移动端根据屏幕宽度初始化swiper
         pagination: '.newProduct-pagination',
         paginationClickable: true,
@@ -200,6 +209,14 @@ function mb() {
                 _this.attr("src",_this.data("original"));
             });
         }
+    })
+    $('#newProduct-l').on('click', function(e){ // 左边切换
+        e.preventDefault()
+        newProduct.swipePrev()
+    });
+    $('#newProduct-r').on('click', function(e) { // 右边切换
+        e.preventDefault();
+        newProduct.swipeNext()
     })
 }
 // 加入购物车弹框js
