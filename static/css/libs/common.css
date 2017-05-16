@@ -98,7 +98,7 @@ a:hover {
 }
 .head .navbar-collapse {
     margin-top: -50px;
-    position: static;
+    position: absolute;
     max-width: 1200px;
     width: 100%;
     vertical-align: middle;
@@ -106,8 +106,10 @@ a:hover {
     padding: 0;
 }
 .nav-list{
-    margin-left: 4%;
-
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    float: none;
 }
 .nav-list>li {
     position: static;
@@ -210,7 +212,9 @@ a:hover {
     outline: none;
 }
 .head-nav {
-    .text-align: center;display: table;margin: 0 auto;
+    .text-align: center;
+    display: table;
+    margin: 0 auto;
 }
 .nav-right-button {
     position: absolute;
@@ -589,9 +593,6 @@ a:hover {
     }
 }
 @media all and (max-width: 1200px) {
-    .nav-list {
-        margin-left: 0;
-    }
     .qrcode-div {
         display: none;
     }
