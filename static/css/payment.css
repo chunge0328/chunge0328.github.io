@@ -1,0 +1,97 @@
+/*中间导航开始*/
+.center-nav {
+    padding: 25px 0 25px 0;
+    background-color: #005b9a;
+}
+
+.center-nav li {
+    list-style-type: none;
+}
+.center-nav li {
+    text-decoration: none;
+    font-size: 16px;
+    color: #91A8B7;
+    cursor: default;
+}
+.center-nav li.active {
+    color: white;
+}
+/*中间导航结束*/
+.center-content{
+    height: 100%;
+    background-color: #f8f8f8;
+    padding: 61px 80px 54px 80px;
+}
+.center-content .cap{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #cacaca;
+    margin-bottom: 35px;
+}
+.container .payment{
+    width: 100%;
+    height:100%;
+    background-color: white;
+    padding: 22px 0px 24px 46px;
+}
+.container .payment p{
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 26px;
+}
+.container .payment .radio{
+    color: #0096FF;
+    margin-bottom: 125px;
+}
+.container .payment .btn{
+    background-color: #FF4D00;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 18px;
+}
+.container .payment .btn:hover{
+    background-color: #e54600;
+}
+@media screen and (min-width: 1200px){
+    .container .center-nav .l2{
+        margin-left: 30px;
+    }
+    .container .center-nav .l3{
+        margin-left: 30px;
+    }
+    .container .center-nav .l4{
+        margin-left: 60px;
+    }
+}
+@media screen and (min-width: 996px){
+    .container .center-nav .l2{
+        margin-left: 30px;
+    }
+    .container .center-nav .l3{
+        margin-left: 30px;
+    }
+    .container .center-nav .l4{
+        margin-left: 60px;
+    }
+}
+@media screen and (max-width: 550px){
+    .center-content{
+        height: 100%;
+        background-color: #f8f8f8;
+        padding: 10px 10px 10px 10px;
+    }
+    .container .payment{
+        padding: 22px 10px 24px 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    .center-content{
+        height: 100%;
+        background-color: #f8f8f8;
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+

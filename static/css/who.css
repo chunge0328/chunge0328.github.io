@@ -1,0 +1,113 @@
+/*中间导航开始*/
+.center-nav {
+    padding: 25px 0 25px 0;
+    background-color: #005b9a;
+}
+
+.center-nav li {
+    list-style-type: none;
+}
+.center-nav li {
+    text-decoration: none;
+    font-size: 16px;
+    color: #91A8B7;
+    cursor: default;
+}
+
+/*中间导航结束*/
+/*中间内容开始*/
+.center-content{
+    height: 100%;
+    background-color: #f8f8f8;
+    margin:0 auto;
+    /*padding-bottom: 35px;*/
+    padding: 60px 80px 37px 80px;
+}
+@media screen and (max-width: 550px){
+    .center-content{
+        height: 100%;
+        background-color: #f8f8f8;
+        margin:0 auto;
+        /*padding-bottom: 35px;*/
+        padding: 10px 10px 10px 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    .center-content{
+        height: 100%;
+        background-color: #f8f8f8;
+        margin:0 auto;
+        /*padding-bottom: 35px;*/
+        padding: 20px 20px 20px 20px;
+    }
+}
+/*cap*/
+.center-content .cap{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #cacaca;
+    margin-bottom: 35px;
+}
+.center-content .blank{
+    margin-bottom: 14px;
+}
+/*cap*/
+/*内容*/
+.information{
+    background-color: white;
+    padding: 21px 40px  23px 44px;
+}
+.information .psd{
+    display: inline-block;
+    width: 25%;
+    margin-right: 20px;
+}
+.information  span{
+    color: #626262;
+}
+.information .btn{
+    background-color: #FF4D00;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 27px;
+    margin-left: 18px;
+}
+.information .btn:hover{
+    background-color: #e54600;
+}
+@media screen and (min-width: 1200px){
+    .container .center-nav .l2{
+        margin-left: 30px;
+    }
+    .container .center-nav .l3{
+        margin-left: 30px;
+    }
+    .container .center-nav .l4{
+        margin-left: 60px;
+    }
+}
+@media screen and (min-width: 996px){
+    .container .center-nav .l2{
+        margin-left: 30px;
+    }
+    .container .center-nav .l3{
+        margin-left: 30px;
+    }
+    .container .center-nav .l4{
+        margin-left: 60px;
+    }
+}
+@media screen and (max-width: 550px){
+    .information .psd{
+        display: inline-block;
+        width: 100%;
+    }
+    .information{
+        background-color: white;
+        padding: 21px 5px  23px 5px;
+    }
+    }
+/*中间内容结束*/
+

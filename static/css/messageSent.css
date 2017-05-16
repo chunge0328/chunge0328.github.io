@@ -1,0 +1,35 @@
+/*中间导航开始*/
+.container .breadcrumb{
+    height: 65px;
+    font-size:14px;
+    padding-left:40px;
+    line-height: 50px;
+}
+.container .breadcrumb a{
+    color: #0096FF;
+    text-decoration: none;
+}
+.container .breadcrumb .active{
+    color: #000;
+}
+/*中间导航结束*/
+/*cap*/
+.container .cap{
+    font-size:16px;
+    font-weight:bold;
+    margin-top: 45px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #cccccc;
+}
+.container p{
+    font-size:14px;
+    margin:25px 0 16px 0;
+}
+/*cap*/
+@media screen and (max-width: 321px){
+    .container .breadcrumb{
+        font-size:12px;
+    }
+}
+
+

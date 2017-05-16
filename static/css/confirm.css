@@ -1,0 +1,386 @@
+/*中间导航开始*/
+.center-nav {
+    padding: 25px 0 25px 0;
+    background-color: #005b9a;
+}
+
+.center-nav li {
+    list-style-type: none;
+}
+.center-nav li {
+    text-decoration: none;
+    font-size: 16px;
+    color: #91A8B7;
+    cursor: default;
+}
+.center-nav li.active {
+    color: white;
+}
+/*中间导航结束*/
+/*中间内容开始*/
+.center-content {
+    height: 100%;
+    background-color: #F7F7F7;
+    padding: 33px 80px 44px 80px;
+}
+
+.center-content .who {
+    height: 79px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 79px;
+    border-bottom: 1px solid #cacaca;
+    margin-bottom: 35px;
+}
+
+.center-content p {
+    font-size: 14px;
+}
+
+/*Mail部分开始*/
+.center-content .long {
+    font-size: 14px;
+    color: #FF4E00;
+}
+
+.center-content .m {
+    font-size: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.center-content .up {
+    font-size: 14px;
+    background-color: #E9F7FF;
+    padding: 23px 0px 36px 23px;
+    margin-top: 26px;
+}
+.center-content span{
+    display: inline-block;
+    margin-bottom: 35px;
+}
+.payment span{
+    display: inline-block;
+    margin-bottom: 35px;
+}
+
+.center-content .down {
+    font-size: 14px;
+    background-color: #E9F7FF;
+    padding: 23px 0px 36px 23px;
+    margin-top: 26px;
+}
+
+.center-content .down .price {
+    color: #000000;
+}
+
+/*Mail部分结束*/
+/*Payment部分开始*/
+.center-content .payment{
+    font-size: 14px;
+}
+.center-content .yellow {
+    background-color: #FFF5EF;
+    padding: 23px 0px 36px 23px;
+    margin-top: 26px;
+}
+
+/*Payment部分结束*/
+/*商品细节开始*/
+.details .cap {
+    height: 79px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 79px;
+    padding-left: 83px;
+    /*margin-bottom: 35px;*/
+}
+
+.details .goods {
+    height: 100%;
+    padding: 57px 0 79px 0;
+    text-align: center;
+    margin: 0 auto;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #ccc;
+}
+
+.details .good {
+    height: 100%;
+}
+
+.details .good img {
+    width: 100%;
+    height: 100%;
+}
+
+.details .red {
+    font-size: 16px;
+    color: #FF4D00;
+}
+
+/*ShoppingCart开始*/
+.right .word {
+    padding-left: 14px;
+}
+
+.right .cap2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 53px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #cacaca;
+    color: #000;
+}
+
+.right .text1 {
+    height: 100%;
+    font-size: 14px;
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid #cacaca;
+
+}
+
+.right .text2 {
+    height: 100%;
+    font-size: 14px;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #cacaca;
+}
+
+.right .text2 .btn {
+    font-size: 14px;
+    margin-right: 23px;
+    background-color: #FF4D00;
+    color: white;
+}
+.right .text2 .btn:hover {
+    background-color: #e54600;
+}
+
+.right .text3 {
+    height: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 15px 0 15px 0;
+    background-color: #FFF6EE;
+    border-bottom: 1px solid #cacaca;
+}
+
+.right .price1 {
+    font-size: 12px;
+    width: 29px;
+    height: 19px;
+    margin-right: 74px;
+}
+
+.right .price2 {
+    font-size: 16px;
+    width: 40px;
+    height: 27px;
+    color: #000;
+    margin-right: 61px;
+}
+
+.right .price3 {
+    font-size: 16px;
+    width: 44px;
+    height: 27px;
+    color: red;
+    margin-right: 61px;
+}
+
+.right .cap3 {
+    font-size: 16px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cacaca;
+}
+
+.right .text4 {
+    height: 100%;
+    font-size: 14px;
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid #cacaca;
+}
+
+.right .text5 {
+    height: 100%;
+    padding: 15px 0 15px 0;
+    background-color: #FFF6EE;
+    margin-top: 46px;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+}
+
+/*购物车结束*/
+.track .who {
+    height: 79px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 79px;
+    border-bottom: 1px solid #cacaca;
+    margin-bottom: 35px;
+}
+
+.track .b1 {
+    /*width: 192px;*/
+    height: 49px;
+    font-size: 16px;
+    color: white;
+    background-color: #FF4D00;
+    /*margin-bottom: 20px;*/
+}
+.track .b1:hover{
+    background-color: #e54600;
+}
+
+.track .buttom {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px){
+    .container .center-nav .l2{
+        margin-left: 30px;
+    }
+    .container .center-nav .l3{
+        margin-left: 30px;
+    }
+    .container .center-nav .l4{
+        margin-left: 60px;
+    }
+}
+@media screen and (min-width: 996px){
+    .container .center-nav .l2{
+        margin-left: 30px;
+    }
+    .container .center-nav .l3{
+        margin-left: 30px;
+    }
+    .container .center-nav .l4{
+        margin-left: 60px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .right {
+        width: 55%;
+        margin-top: 53px;
+        float: right;
+    }
+
+    .track {
+        height: 100%;
+        margin-top: 102px;
+        margin-left: 113px;
+        margin-bottom: 140px;
+    }
+
+    .track .b2 {
+        float: left;
+        height: 49px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: #FF4D00;
+    }
+    .track .b2:hover{
+        background-color: #e54600;
+    }
+
+    .track .b3 {
+        float: right;
+        height: 49px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: #FF4D00;
+    }
+    .track .b3:hover{
+        background-color: #e54600;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .center-content {
+        height: 100%;
+        background-color: #f8f8f8;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .details .good img {
+        margin-bottom: 30px;
+    }
+
+    .center-content .yellow {
+        background-color: #FFF5EF;
+        padding: 23px 0 36px 23px;
+        margin-top: 26px;
+        margin-bottom: 44px;
+    }
+
+    .right {
+        margin-top: 20px;
+    }
+
+    .right .word {
+        padding-left: 0;
+    }
+
+    .track .b2 {;
+        height: 49px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 20px;
+        background-color: #FF4D00;
+    }
+
+    .track .b3 {
+        height: 49px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: #FF4D00;
+    }
+
+    .details .cap {
+        padding-left: 0;
+        /*margin-bottom: 35px;*/
+    }
+
+    .details .goods {
+        padding: 35px 0 35px 0;
+    }
+
+    .right .price1 {
+        margin-right: 0;
+    }
+
+    .right .price2 {
+        margin-right: 0;
+    }
+
+    .right .price3 {
+        margin-right: 0;
+    }
+
+    .right .text3 {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .track{
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .track .b3 {
+      margin-bottom: 50px;
+    }
+}
+
+/*中间内容结束*/
+
+

@@ -1,0 +1,232 @@
+.header-nav {
+    position: relative;
+}
+/*details-content*/
+.details-content .row {
+    margin: 0;
+    cursor: default;
+}
+.details-left-img {
+    padding: 0 2%;
+}
+.details-left-img .swiper-container {
+    border: 1px solid #e0e0e0;
+    margin:10% 0;
+}
+.details-left-img .swiper-slide {
+    text-align: center;
+}
+.details-left-img .swiper-slide img{
+    width: 100%;
+}
+.details-left-img .pagination {
+    display: none;
+}
+.details-left-img .tabs {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+.details-left-img .tabs a{
+    width: 20%;
+    float: left;
+    outline: none;
+}
+.details-left-img .tabs img{
+    width: 80%;
+    margin: 5%;
+    border: 1px solid #cccccc;
+    padding: 5%;
+}
+.tabs .active img {
+    border-color: #ff4e00;
+}
+/*details-contents*/
+.details-contents h3 {
+    margin-top: 90px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.details-contents .lead {
+    font-size: 16px;
+    line-height: 2.5;
+    color: #000000;
+}
+.tips-p ,.details-contents .tips-p{
+    line-height: 40px;
+}
+.tips-p span {
+    color: #0096ff;
+}
+.details-contents h4 {
+    margin:25px 0
+}
+/*color-active*/
+.color-active {
+    list-style: none;
+    margin: 10px 0;
+    display: inline;
+}
+.color-active li {
+    float: left;
+    width: 40px;
+    border: 1px solid #cccccc;
+    margin-right: 20px;
+    cursor: pointer;
+    height: 40px;
+    position: relative;
+}
+.color-active li.active {
+    border-color: #ff4e00;
+}
+.color-active .active:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background: url("../img/productDetails/dui.png") no-repeat;
+    color: red;
+    bottom: 0;
+}
+.color-active li img {
+    width: 100%;
+}
+.details-contents-buttom {
+    clear: both;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+.details-contents-buttom .btn-primary {
+    background: #ff4d00;
+    border:none;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 6px 25px;
+    margin-bottom: 15px;
+}
+.details-contents-buttom .btn-primary:hover {
+    background: #e54600;
+    border:none;
+}
+.class-p {
+    color: #8f8f8f;
+}
+/*数字输入框*/
+.spinner {
+    width: 72px;
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.input-group .form-control {
+    border-radius: 0;
+    width: 46px;
+}
+.spinner input {
+    text-align: right;
+}
+.input-group-btn-vertical {
+    position: relative;
+    white-space: nowrap;
+    width: 1%;
+    vertical-align: middle;
+    display: table-cell;
+}
+.input-group-btn-vertical > .btn {
+    display: block;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    padding:7px 8px;
+    margin-left: -1px;
+    position: relative;
+    border-radius: 0;
+}
+.input-group-btn-vertical > .btn:last-child {
+    margin-top: 2px;
+}
+.input-group-btn-vertical i{
+    position: absolute;
+    top: 0;
+    left: 1px;
+}
+/*Share*/
+.Share-h5{
+    margin: 20px 0;
+}
+.jiathis_style_32x32 a span.jtico{
+    background:url("../img/productDetails/xq.png") top left no-repeat;
+    width:28px;
+    height:28px;
+    float: left;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.jiathis_style_32x32 a.jiathis_button_fb span.jtico{
+    background-position:-10px -10px;
+}
+.jiathis_style_32x32 a.jiathis_button_linkedin span.jtico {
+    background-position:-49px -10px;
+}
+.jiathis_style_32x32 a.jiathis_button_pinterest span.jtico{
+    background-position:-87px -10px;
+}
+.jiathis_style_32x32 a.jiathis_button_tumblr span.jtico{
+    background-position:-125px -10px;
+}
+.jiathis_style_32x32 a.jiathis_button_twitter span.jtico{
+    background-position:-164px -10px;
+}
+.jiathis_style_32x32 a.jiathis_button_googleplus span.jtico{
+    background-position:-203px -10px;
+}
+/*详情内容右边*/
+.details-right {
+    text-align: center;
+}
+.details-right ul {
+    list-style: none;
+}
+.details-right li {
+    display: inline-table;
+    border: 1px solid #e0e0e0;
+    width: 60%;
+    margin: 10% auto;
+    overflow: hidden;
+}
+.details-right p {
+    color: #0096ff;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+.details-right img {
+    margin-bottom: 15px;
+}
+/*content-list*/
+.content-list h2 {
+    margin-left: 10px;
+}
+.content-list img {
+    width: 100%;
+}
+@media all and (max-width: 960px) {
+    .details-left-img .tabs{
+        display: none;
+    }
+    .details-left-img .pagination {
+        display: block;
+    }
+    .pagination span.swiper-active-switch ,.newProduct-pagination span.swiper-active-switch{
+        background: #ccc;
+    }
+    .pagination .swiper-pagination-switch {
+        background: #f0f0f0;
+        box-shadow: none;
+    }
+    .details-right li {
+        width: 80%;
+        margin: 10%;
+    }
+}

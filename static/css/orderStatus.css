@@ -1,0 +1,124 @@
+.container .b1{
+    font-size: 16px;
+    height: 66px;
+    line-height: 66px;
+    color: white;
+    padding-left: 41px;
+    background-color: #005b9a;
+}
+/*中间内容开始*/
+.container .center-content {
+    height: 100%;
+    padding: 66px 77px 66px 82px;
+    background-color: #F7F7F7;
+}
+
+.container .center-content .cap1 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.container .center-content .cap2 {
+    font-size: 16px;
+    padding: 22px 0 10px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.container .center-content .cap3 {
+    font-size: 14px;
+    padding: 10px 0 36px 0;
+}
+
+.container .center-content .cap4 {
+    font-size: 16px;
+    padding-bottom: 12px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+/*Address开始*/
+.container .center-content .box {
+    height: 188px;
+    margin-top: 18px;
+    padding: 23px 0 28px 23px;
+}
+
+.container .center-content .cap5 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 41px 0 21px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.container .center-content .price {
+    padding: 21px 0 0 0;
+}
+
+.container .center-content .cap6 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 88px 0 21px 0;
+}
+/*Adress结束*/
+/*Orderdetails开始*/
+.row-m {
+    margin: 0 15px;
+    margin-bottom: 500px;
+}
+.container .center-content .tab1 {
+    padding: 20px 0;
+    font-size: 14px;
+    background-color: #E9F7FF;
+}
+.center-content .tab1 span {
+    text-align: center;
+}
+.container .center-content .tab2 {
+    height: 120px;
+    background-color: white;
+}
+.container .center-content .tab2 span{
+    line-height: 120px;
+    border-right: 2px solid #E9F7FF;
+    font-size: 11px;
+    text-align: center;
+}
+.container .center-content .tab2 span:last-child {
+    border: none;
+}
+
+/*Orderdetails结束*/
+@media all and (max-width: 960px){
+    .tab1 {
+        display: none;
+    }
+    .container .center-content .tab2 span {
+        line-height: 50px;
+        border: none;
+        overflow: hidden;
+    }
+    .container .center-content .tab2 {
+        height: auto;
+    }
+    .container .center-content {
+        height: 100%;
+        padding: 10px 10px 10px 10px;
+        background-color: #F7F7F7;
+    }
+}
+/*@media all and (max-width: 768px){*/
+    /*.container .center-content {*/
+        /*height: 100%;*/
+        /*padding: 20px 20px 20px 20px;*/
+        /*background-color: #F7F7F7;*/
+    /*}*/
+/*}*/
+/*@media all and (max-width: 550px){*/
+    /*.container .center-content {*/
+        /*height: 100%;*/
+        /*padding: 10px 10px 10px 10px;*/
+        /*background-color: #F7F7F7;*/
+    /*}*/
+/*}*/
+/*中间内容结束*/

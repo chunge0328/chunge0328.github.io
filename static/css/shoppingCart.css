@@ -1,0 +1,337 @@
+/*中间内容开始*/
+/*中间标题开始*/
+.container .caption{
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 58px;
+}
+/*中间标题结束*/
+/*购物车开始*/
+.container .goods1{
+    height: 100%;
+    padding: 22px 0px 22px 0px;
+    margin-bottom: 78px;
+    text-align: center;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+/*购物车按钮开始*/
+.input-group input{
+    width: 47px !important;
+    border-radius: 0;
+}
+.input-group-btn-vertical {
+    position: relative;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+}
+.input-group-btn-vertical > .btn {
+    display: block;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 8px;
+    margin-left: 5px;
+    position: relative;
+    border-radius: 0;
+}
+.input-group-btn-vertical > .btn:first-child {
+    margin-bottom: 1px;
+}
+/*.input-group-btn-vertical > .btn:last-child {*/
+    /*margin-top: -2px;*/
+    /*border-bottom-right-radius: 4px;*/
+/*}*/
+.input-group-btn-vertical i{
+    position: absolute;
+    top: 1px;
+    left: 3px;
+}
+/*购物车按钮结束*/
+
+
+.container .good{
+    height: 100%;
+}
+.container .good img{
+    width: 100%;
+    height: 100%;
+}
+.container .c1{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 52px;
+    margin-top: 13px;
+}
+.container .p1{
+    margin-top: 13px;
+}
+.container .c2{
+    font-size: 14px;
+}
+.container .right .blue{
+    color: #2FA9FF;
+}
+.container .r1{
+    font-size: 18px;
+    color: #FF4E00;
+}
+.container .r2{
+    font-size: 16px;
+    color: #FF4E00;
+}
+.container .b1{
+    font-size: 14px;
+    color: #0095FF;
+}
+.container .black{
+    color:black;
+}
+.container .black span{
+    color:#8F8F8F;
+}
+.container .goods2{
+    height: 100%;
+    padding: 22px 0px 22px 0px;
+    margin-bottom: 221px;
+    text-align: center;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+/*购物车结束*/
+.cart-down{
+    margin-bottom: 100px;
+}
+/*中间左侧开始*/
+.left{
+    margin-left: -15px;
+    margin-right: 15px;
+}
+.left .cap1{
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #cacaca;
+    color: #000;
+}
+/*输入优惠码*/
+.left .buttom1{
+    margin-top:18px;
+    display: block;
+}
+.left button{
+    width: 230px;
+    height: 40px;
+    background-color: white;
+    color: black;
+}
+.left .form-group .blank{
+    margin-top:22px;
+    color: #0095FF;
+}
+label{
+    font-weight: 400;
+    color: #000;
+}
+#all{
+    display: none;
+}
+.buttom2 button{
+    width: 50%;
+    background-color: #0095FF;
+    color: white;
+    font-size: 14px;
+}
+.buttom2 button:hover{
+    background-color: #0084e0;
+    color: white;
+}
+.buttom2 i{
+    font-style: normal;
+    color: #0095FF;
+}
+/*输入优惠码*/
+/*中间左侧结束*/
+/*中间右侧开始*/
+.right .word {
+    padding-left: 14px;
+}
+
+.right .cap2 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #cacaca;
+    color: #000;
+}
+
+.right .text1 {
+    height: 100%;
+    font-size: 14px;
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid #cacaca;
+
+}
+
+.right .text2 {
+    height: 100%;
+    font-size: 14px;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #cacaca;
+}
+
+.right .text2 .btn {
+    font-size: 14px;
+    margin-right: 23px;
+    background-color: #FF4D00;
+    color: white;
+}
+.right .text2 .btn:hover {
+    background-color: #e54600;
+}
+
+.right .text3 {
+    height: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 15px 0 15px 0;
+    background-color: #FFF6EE;
+    border-bottom: 1px solid #cacaca;
+}
+
+.right .price1 {
+    font-size: 12px;
+    width: 29px;
+    height: 19px;
+    margin-right: 74px;
+}
+
+.right .price2 {
+    font-size: 16px;
+    width: 40px;
+    height: 27px;
+    color: #000;
+    margin-right: 61px;
+}
+
+.right .price3 {
+    font-size: 16px;
+    width: 44px;
+    height: 27px;
+    color: red;
+    margin-right: 61px;
+}
+
+.right .cap3 {
+    font-size: 16px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cacaca;
+}
+
+.right .text4 {
+    height: 100%;
+    font-size: 14px;
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid #cacaca;
+}
+
+.right .text5 {
+    height: 100%;
+    padding: 15px 0 15px 0;
+    background-color: #FFF6EE;
+    margin-top: 46px;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+}
+
+.right .buttom .btn{
+    font-size: 16px;
+    font-weight: bold;
+    height: 49px;
+    background-color: #FF4D00;
+    color: white;
+    margin-top: 37px;
+}
+.right .buttom .btn:hover{
+    background-color: #e54600;
+}
+
+@media screen and (max-width: 960px) {
+    .details-contents-buttom{
+        margin: 0 321px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .right {
+        margin-top: 20px;
+    }
+
+    .right .word {
+        padding-left: 0;
+    }
+    .right .price1 {
+        margin-right: 0;
+    }
+
+    .right .price2 {
+        margin-right: 0;
+    }
+
+    .right .price3 {
+        margin-right: 0;
+    }
+
+    .right .text3 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 550px) {
+    .left{
+        margin-left: 5px;
+    }
+    .right{
+        margin-top:80px;
+    }
+    .container .goods2{
+        height: 100%;
+        padding: 22px 0px 22px 0px;
+        margin-bottom: 80px;
+        text-align: center;
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+    }
+    .right .word1{
+        margin-left: 0;
+    }
+    .details-contents-buttom{
+       margin: -75px 133px 0 133px;
+    }
+    .container .c1{
+        margin-bottom: 0;
+    }
+    .container .goods1{
+        margin-bottom: 0;
+    }
+    .container .goods2{
+        margin-bottom: 22px;
+        border-top: none;
+    }
+}
+@media screen and (max-width: 320px) {
+    .details-contents-buttom{
+        margin: -75px 133px 0 90px;
+    }
+}
+
+.row{
+    margin: 0 auto;
+}
+
+
+/*中间右侧结束*/
+/*中间内容结束*/

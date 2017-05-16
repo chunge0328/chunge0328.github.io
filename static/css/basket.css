@@ -1,0 +1,13 @@
+/*messages 购物车提示多余*/
+.alert-info {
+    display: none;
+}
+.basket-items:nth-child(even) {
+    background: #fff;
+}
+#content_inner .basket-items .price_color ,.price_color{
+    color: #FF4E00;
+}
+#content_inner .form-actions {
+    padding: 15px 20px 50px;
+}

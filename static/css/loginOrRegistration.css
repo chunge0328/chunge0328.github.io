@@ -1,0 +1,97 @@
+.control-label.required:after {
+    color: #FF4D00;
+    content: "*";
+    position: relative;
+    top: 3px;
+    display: inline-block;
+}
+/*中间导航开始*/
+.container .breadcrumb{
+    height: 65px;
+    font-size:14px;
+    padding-left:40px;
+    line-height: 50px;
+}
+.container .breadcrumb a{
+    color: #0096FF;
+    text-decoration: none;
+}
+.container .breadcrumb .active{
+    color: #000;
+}
+/*中间导航结束*/
+/*中间内容开始*/
+label{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+.center-content{
+    margin: 0 auto;
+}
+/*中间左侧部分开始*/
+.container .center-left{
+    height: 100%;
+    padding:30px 33px 30px 60px;
+    margin-bottom:30px;
+    margin-right:60px;
+    background-color: #F5F5F5;
+}
+.container .center-left a{
+    display: block;
+    margin-bottom:26px;
+}
+.container .cap{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom:26px;
+}
+.container .center-left .btn{
+     width: 106px;
+     height: 49px;
+     color: white;
+     font-size: 20px;
+     background-color: #FF4D00;
+ }
+.container .center-left .btn:hover{
+    background-color: #e54600;
+}
+/*中间左侧部分结束*/
+/*中间右侧部分开始*/
+.container .center-right{
+    height: 100%;
+    padding:30px 33px 30px 60px;
+    margin-bottom:30px;
+    background-color: #F5F5F5;
+}
+.container .center-right .btn{
+    width: 186px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    margin-top:30px;
+    background-color: #FF4D00;
+}
+.container .center-right .btn:hover{
+    background-color: #e54600;
+}
+/*中间右侧部分结束*/
+/*中间内容结束*/
+@media screen and (min-width: 960px){
+    .container .center-left{
+        width: 47.3%;
+        height: 100%;
+        padding:30px 33px 30px 60px;
+        margin-bottom:30px;
+        margin-right:60px;
+        background-color: #F5F5F5;
+    }
+    .container .center-right{
+        width: 47.3%;
+        height: 100%;
+        padding:30px 33px 30px 60px;
+        margin-bottom:30px;
+        background-color: #F5F5F5;
+    }
+}

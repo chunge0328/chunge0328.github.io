@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="../img/favicon.ico">
+    <title>vaptio home</title>
+    <link rel="stylesheet" href="../css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/libs/idangerous.swiper.css">
+    <link rel="stylesheet" href="../css/libs/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="../js/libs/html5.js"></script>
+    <script type="text/javascript" src="../js/libs/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--头部-->
+    <div class="header-nav">
+        <!--添加二维码-->
+        <div class="qrcode-div">
+            <p class="glyphicon glyphicon-qrcode"></p>
+            <div class="qrcode-img">
+                <img src="data:image/png;base64,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" width="200" height="200" alt="">
+            </div>
+        </div>
+        <!--可关闭部分-->
+        <div class="top-ms">
+            <a class="remove-html" href="http://www.fda.gov/TobaccoProducts/Labeling/ProductsIngredientsComponents/ucm456610.htm">Leave and close</a>
+            <a class="remove-notice" href="javascript:;">I am at least 18 years old</a>
+            <div class="remove-p">You must be at least 18 years old to browse this site further.</div>
+        </div>
+        <!--可关闭部分-->
+        <div class="head" id="headcss">
+            <!--导航-->
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <!--logo-->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/">
+                            <img src="../img/index/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <!--导航右边-->
+                    <div class="head-nav">
+                        <ul class="navbar-right nav-right-button">
+                            <li>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle glyphicon glyphicon-user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Sign in OR register</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">log out</a></li>
+                                    </ul>
+                                </div>
+
+                                <form id="language_selector" class="btn-group" action="/i18n/setlang/" method="post">
+                                    <input type="hidden" name="csrfmiddlewaretoken" value="6J1PJnGuCFWkVu65w9TQhXfxn1YVt6GbznQZukzOyd2B5KtHRXF0wbsXzhBTZnXi">
+                                    <input name="next" type="hidden" value="/">
+                                    <input id="language" name="language" type="hidden" value="">
+                                    <button type="button" class="btn btn-default dropdown-toggle dropdown-language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        zh-cn
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu form-control"> <!--语言切换-->
+                                        <li>EN</li>
+                                        <li>zh-cn</li>
+                                    </ul>
+                                </form>
+                            </li>
+                        </ul>
+                        <div class="cart-buttom">
+                            <p class="cart-buttom-tp"><span>0</span></p>
+                            <button class="glyphicon glyphicon-shopping-cart btn btn-primary" type="button"></button>
+                            <div class="cart-div">
+                                <!--购物车为空-->
+                                <div class="cart-div-none" style="display: none">
+                                    <p>购物车中还没有商品，赶紧选购吧！</p>
+                                </div>
+                                <!--购物车不为空-->
+                                <div class="cart-divs">
+                                    <div class="cart-divs-list">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <div class="row">
+                                                        <div class="col-xs-4 col-sm-4">
+                                                            <img data-src="../img/productDetails/xqimg.jpg" alt="" class="img-thumbnail">
+                                                        </div>
+                                                        <div class="col-xs-4 col-sm-4">
+                                                            Ascension S150
+                                                        </div>
+                                                        <div class="col-xs-2 col-sm-2">
+                                                            <p>Qty</p>
+                                                            <p>3</p>
+                                                        </div>
+                                                        <div class="col-xs-2 col-sm-2">
+                                                            <p>$68</p>
+                                                            <p class="cart-delete">删除</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="row">
+                                                        <div class="col-xs-4 col-sm-4">
+                                                            <img data-src="../img/productDetails/xqimg.jpg" alt="" class="img-thumbnail">
+                                                        </div>
+                                                        <div class="col-xs-4 col-sm-4">
+                                                            Ascension S150
+                                                        </div>
+                                                        <div class="col-xs-2 col-sm-2">
+                                                            <p>Qty</p>
+                                                            <p>3</p>
+                                                        </div>
+                                                        <div class="col-xs-2 col-sm-2">
+                                                            <p>$68</p>
+                                                            <p class="cart-delete">删除</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="cart-divs-button">
+                                        <h5>Subtotal：$204</h5>
+                                        <div>
+                                            <button type="button" class="btn btn-default">View Cart</button>
+                                            <button type="button" class="btn btn-primary">Checkout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--三级菜单-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navs-ul nav-list">
+                    <li class="active">
+                        <a href="" title="">HOME</a>
+                    </li>
+                    <li>
+                        <a href="" title="">KIT</a>
+                        <div class="sub-nav">
+                            <!--二级导航-->
+                            <div class="sub-t">
+                                <div class="sub-tcen">
+                                    <a class="cur" href="" title="">Disposable</a>
+                                    <a href="" title="">Starter Kits</a>
+                                    <a href="" title="">Featured Products</a>
+                                    <a href="" title="">Accessories</a>
+                                </div>
+                            </div>
+                            <!--三级导航-->
+                            <div class="sub-d cl">
+                                <div class="sub-show">
+                                    <div class="sub-dcen">
+                                        <div class="sub-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="" title="W3">
+                                                        <!--data-src 用于懒加载-->
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>w1</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2016/07/P1TF_TANK.png" alt="">
+                                                        <p>2</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>w3</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>w4</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-hide">
+                                    <div class="sub-dcen">
+                                        <div class="sub-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="" title="W3">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>W2</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>d1</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>2w</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>w2</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-hide">
+                                    <div class="sub-dcen">
+                                        <div class="sub-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="" title="W3">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>W3</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>d1</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>2w</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>w2</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-hide">
+                                    <div class="sub-dcen">
+                                        <div class="sub-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="" title="W3">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>x</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>df</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>f</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>f</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" title="">MOD</a>
+                        <div class="sub-nav">
+                            <!--二级导航-->
+                            <div class="sub-t">
+                                <div class="sub-tcen">
+                                    <a class="cur" href="" title="">mod</a>
+                                    <a href="" title="">Smod</a>
+                                    <a href="" title="">Fmod</a>
+                                    <a href="" title="">moo</a>
+                                </div>
+                            </div>
+                            <!--三级导航-->
+                            <div class="sub-d cl">
+                                <div class="sub-show">
+                                    <div class="sub-dcen">
+                                        <div class="sub-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="" title="W3">
+                                                        <!--data-src 用于懒加载-->
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2016/07/P1TF_TANK.png" alt="">
+                                                        <p>w1</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>2</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>w3</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>w4</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-hide">
+                                    <div class="sub-dcen">
+                                        <div class="sub-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="" title="W3">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>W2</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>d1</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>2w</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>w2</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-hide">
+                                    <div class="sub-dcen">
+                                        <div class="sub-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="" title="W3">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>W3</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>d1</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>2w</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>w2</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-hide">
+                                    <div class="sub-dcen">
+                                        <div class="sub-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="" title="W3">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>x</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>df</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>f</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">
+                                                        <img data-src="http://vaptio.com/wp-content/uploads/2017/03/C2-MENU.png" alt="">
+                                                        <p>f</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" title="">TANK</a>
+                    </li>
+                    <li>
+                        <a href="" title="">ACCESSORIES</a>
+                    </li>
+                    <li>
+                        <a href="" title="">partnership</a>
+                    </li>
+                    <li>
+                        <a href="" title="">support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--三级菜单结束-->
+    </div>
+    <!--轮播图-->
+    <div class="div-content">
+        <div class="swiper-container banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="" title="">
+                        <img src="../img/index/banner2.jpg?">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" title="">
+                        <img src="../img/index/banner2.jpg?">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" title="">
+                        <img src="../img/index/banner2.jpg?">
+                    </a>
+                </div>
+            </div>
+            <div class="pagination swiper-pagination-white"></div>
+            <div class="arrow-left swiper-button-white banner-button-next"></div>
+            <div class="arrow-right swiper-button-white banner-button-prev"></div>
+        </div>
+        <!--shopNow-->
+        <div class="shopNow-div">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="shopNow-div-bg">
+                        <img class="lazy" data-original="../img/index/cont1.jpg">
+                        <div class="shopNow-div-bgc text-center">
+                            <div class="shopNow-div-bgcolor"></div>
+                            <h4>Power  Rangers</h4>
+                            <h5>
+                                <a href="" title="">
+                                    <span>shop now</span>
+                                </a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">       <!-- 20170422 改为纯色图+链接  -->
+                    <div class="shopNow-div-bg">
+                        <a href="">
+                            <img class="lazy" data-original="../img/index/cont2.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="shopNow-div-bg">
+                        <img class="lazy" data-original="../img/index/cont3.jpg">
+                        <div class="shopNow-div-bgc text-center">
+                            <div class="shopNow-div-bgcolor"></div>
+                            <h4>Power  Rangers</h4>
+                            <h5>
+                                <a href="" title="">
+                                    <span>shop now</span>
+                                </a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cont-img">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6"><img class="lazy" data-original="../img/index/cont-img1.jpg"></div>
+                <div class="clearfix visible-xs-block"></div>
+                <div class="col-xs-6 col-sm-3">
+                    <img class="lazy" data-original="../img/index/cont-img2.jpg">
+                    <div class="cont-img-color1">
+                        <h3>A remarkable</h3>
+                        <h5><span>shop now</span></h5>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3"><img class="lazy" data-original="../img/index/cont-img2.jpg"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3"><img class="lazy" data-original="../img/index/cont-img3.jpg"></div>
+                <div class="col-xs-6 col-sm-3">
+                    <img class="lazy" data-original="../img/index/cont-img3.jpg">
+                    <div class="cont-img-color2">
+                        <h3>Chanel in electronic cigarettes</h3>
+                        <h5>
+                            <a href="" title="">
+                                <span>shop now</span>
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs-block"></div>
+                <div class="col-xs-12 col-sm-6"><img class="lazy" data-original="../img/index/cont-img4.jpg"></div>
+            </div>
+        </div>
+        <!--newProduct-->
+        <div class="newProduct">
+            <p class="newProduct-top">
+                <span>NEW  PRODUCT</span>
+            </p>
+            <div class="swiper-container newProduct-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="newProduct-div">
+                            <div class="newProduct-div-img">
+                                <a href="" title=""> <!--链接产品详情  这里html结构改变了-->
+                                    <img class="lazy" data-original="../img/index/productdemo.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="newProduct-div-imgs">
+                                <div class="newProduct-div-imgbg"></div>
+                                <p>
+                                    <button class="newProduct-button" onclick="myModals('id')"><span class="glyphicon glyphicon-shopping-cart"></span>ADD TO CART</button>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                </p>
+                            </div>
+                            <h6>Ascension S150</h6>
+                            <h5><span>$65</span><span class="newProduct-no">$76</span></h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="newProduct-div">
+                            <div class="newProduct-div-img">
+                                <a href="" title=""> <!--链接产品详情  这里html结构改变了-->
+                                    <img class="lazy" data-original="../img/index/productdemo.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="newProduct-div-imgs">
+                                <div class="newProduct-div-imgbg"></div>
+                                <p>
+                                    <button class="newProduct-button" onclick="myModals('id')"><span class="glyphicon glyphicon-shopping-cart"></span>ADD TO CART</button>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                </p>
+                            </div>
+                            <h6>Ascension S150</h6>
+                            <h5><span>$65</span><span class="newProduct-no">$76</span></h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="newProduct-div">
+                            <div class="newProduct-div-img">
+                                <a href="" title=""> <!--链接产品详情  这里html结构改变了-->
+                                    <img class="lazy" data-original="../img/index/productdemo.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="newProduct-div-imgs">
+                                <div class="newProduct-div-imgbg"></div>
+                                <p>
+                                    <button class="newProduct-button" onclick="myModals('id')"><span class="glyphicon glyphicon-shopping-cart"></span>ADD TO CART</button>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                </p>
+                            </div>
+                            <h6>Ascension S150</h6>
+                            <h5><span>$65</span><span class="newProduct-no">$76</span></h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="newProduct-div">
+                            <div class="newProduct-div-img">
+                                <a href="" title=""> <!--链接产品详情  这里html结构改变了-->
+                                    <img class="lazy" data-original="../img/index/productdemo.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="newProduct-div-imgs">
+                                <div class="newProduct-div-imgbg"></div>
+                                <p>
+                                    <button class="newProduct-button" onclick="myModals('id')"><span class="glyphicon glyphicon-shopping-cart"></span>ADD TO CART</button>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                </p>
+                            </div>
+                            <h6>Ascension S150</h6>
+                            <h5><span>$65</span><span class="newProduct-no">$76</span></h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="newProduct-div">
+                            <div class="newProduct-div-img">
+                                <a href="" title=""> <!--链接产品详情  这里html结构改变了-->
+                                    <img class="lazy" data-original="../img/index/productdemo.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="newProduct-div-imgs">
+                                <div class="newProduct-div-imgbg"></div>
+                                <p>
+                                    <button class="newProduct-button" onclick="myModals('id')"><span class="glyphicon glyphicon-shopping-cart"></span>ADD TO CART</button>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                </p>
+                            </div>
+                            <h6>Ascension S150</h6>
+                            <h5><span>$65</span><span class="newProduct-no">$76</span></h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="newProduct-div">
+                            <div class="newProduct-div-img">
+                                <a href="" title=""> <!--链接产品详情  这里html结构改变了-->
+                                    <img class="lazy" data-original="../img/index/productdemo.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="newProduct-div-imgs">
+                                <div class="newProduct-div-imgbg"></div>
+                                <p>
+                                    <button class="newProduct-button" onclick="myModals('id')"><span class="glyphicon glyphicon-shopping-cart"></span>ADD TO CART</button>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                </p>
+                            </div>
+                            <h6>Ascension S150</h6>
+                            <h5><span>$65</span><span class="newProduct-no">$76</span></h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="newProduct-div">
+                            <div class="newProduct-div-img">
+                                <a href="" title=""> <!--链接产品详情  这里html结构改变了-->
+                                    <img class="lazy" data-original="../img/index/productdemo.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="newProduct-div-imgs">
+                                <div class="newProduct-div-imgbg"></div>
+                                <p>
+                                    <button class="newProduct-button" onclick="myModals('id')"><span class="glyphicon glyphicon-shopping-cart"></span>ADD TO CART</button>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                </p>
+                            </div>
+                            <h6>Ascension S150</h6>
+                            <h5><span>$65</span><span class="newProduct-no">$76</span></h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="newProduct-div">
+                            <div class="newProduct-div-img">
+                                <a href="" title=""> <!--链接产品详情  这里html结构改变了-->
+                                    <img class="lazy" data-original="../img/index/productdemo.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="newProduct-div-imgs">
+                                <div class="newProduct-div-imgbg"></div>
+                                <p>
+                                    <button class="newProduct-button" onclick="myModals('id')"><span class="glyphicon glyphicon-shopping-cart"></span>ADD TO CART</button>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                </p>
+                            </div>
+                            <h6>Ascension S150</h6>
+                            <h5><span>$65</span><span class="newProduct-no">$76</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="newProduct-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!--弹框 前端渲染-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <form id="formId" action="" method="post">
+                    <div class="from-modal">
+                        <div class="from-content">
+                            <input type="hidden" id="csrfmiddlewaretoken" name="csrfmiddlewaretoken" value="">
+                            <div class="modal-body">
+                                <h3 id="myModal-name">Name</h3>
+                                <p class="tips-p class-p">Availability:<span>In stock</span></p>
+                                <h4><strong id="myModal-price">$68</strong></h4>
+                                <p class="class-p">color</p>
+                                <ul class="color-active" >
+
+                                </ul>
+                                <input type="hidden" id="id_child_id" name="child_id" value="1">
+                                <div class="details-contents-buttom">
+                                    <div class="input-group spinner">
+                                        <input type="text" id="id_quantity" name="quantity" class="form-control" value="1">
+                                        <div class="input-group-btn-vertical">
+                                            <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-menu-up"></i></button>
+                                            <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-menu-down"></i></button>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" data-loading-text="添加中...">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="from-loading">
+                            <div class="from-loading-text">加载中...</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="div-footer">
+        <!--footer-->
+        <div class="footer-div">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div class="footer-widget">
+                        <h4 class="block-title">FOLLOW US</h4>
+                        <div class="textwidget">
+                            <p>
+                                <a href="" target="_blank" class="a-bg1"></a>
+                                <a href="https://www.linkedin.com/company/6415948?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A6415948%2Cidx%3A1-1-1%2CtarId%3A1470093116083%2Ctas%3Avaptio" target="_blank" class="a-bg2"></a>
+                                <a href="https://www.instagram.com/vaptiousa/" target="_blank" class="a-bg3"></a>
+                                <a href="https://twitter.com/VaptioOfficial" target="_blank" class="a-bg4"></a>
+                                <a href="https://www.facebook.com/vaptiousa/" target="_blank" class="a-bg5"></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-widget">
+                        <h4 class="block-title">CONTACT US</h4>
+                        <div class="textwidget">
+                            <p><a href="mailto:sales@vaptio.com">sales@vaptio.com</a></p>
+                            <p><a href="mailto:info@vapito.com">info@vapito.com</a></p>
+                            <p><a href="javascript:;">office:626-667-8633</a></p>
+                        </div>
+                    </div>
+                    <p class="botn-p">Address: 1055 North Argonia</p>
+                    <p class="botn-p">Place, Walnut, CA 91789</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <h4>SUPPORT</h4>
+                    <ul class="menu-support">
+                        <li class="menu-item "><a href="">genuien</a></li>
+                        <li class="menu-item "><a href="">downloao</a></li>
+                        <li class="menu-item "><a href="">FAQ</a></li>
+                        <li class="menu-item "><a href="">WARRANTY</a></li>
+                        <li class="menu-item "><a href="">Privacy Policy</a></li>
+                        <li class="menu-item "><a href="">terms & conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-p">
+                    <!--Newsletter Subscription-->
+                    <div class="Newsletter">
+                        <h4>Newsletter Subscription</h4>
+                        <div class="input-group form-group">
+                            <input type="text" class="form-control" placeholder="Email  Address"/>
+                            <button class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                    <p>NOTICE: This product contains nicotine derived from tobacco. Nicotine is an addictive chemical.The products on this site are Intended for use by adult smokers of legal smoking age.These products shall not be used by children, women who are pregnant or may become pregnant or any person with an elevated risk of, or preexisting condition of, any medical condition which includes,but is not limited to, heart disease, diabetes, high blood pressure or asthma.</p>
+                </div>
+            </div>
+            <p>Copyright © 2017 Vaptio Inc., All rights reserved</p>
+        </div>
+        <!--up-top-->
+        <div class="up-top hide">
+            <button class="glyphicon glyphicon-menu-up btn btn-primary" type="button"></button>
+        </div>
+    </div>
+
+    <!--如当前页面无需另外写js,默认data-main="../js/index"-->
+    <script type="text/javascript" data-main="../js/index" src="../js/libs/require.min.js"></script>
+
+</body>
+</html>

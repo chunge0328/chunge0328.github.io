@@ -1,0 +1,116 @@
+/*search*/
+@media screen and (min-width: 768px){
+    .search-nav{
+        width: auto;
+        height: 100px;
+        background-color: #E7F5FF;
+        position: relative;
+    }
+    .sto-nav{
+        position: absolute;
+        left: 50%;
+        margin-left: -300px;
+    }
+    .navbar-nav .block{
+        margin-right: 60px;
+    }
+
+}
+@media screen and (max-width: 767px){
+    .search-nav{
+        width: auto;
+        height: auto;
+        background-color: #E7F5FF;
+
+    }
+}
+.search-nav a{
+    color: #000;
+}
+.navbar-nav li.active a{
+    background-color: #eee;
+}
+/*search*/
+/*slogan*/
+.sel-slogan{
+    padding: 57px 0 28px 0;
+    /*border-bottom: 1px solid #cacaca;*/
+}
+.sel-slogan .cap{
+    font-size: 30px;
+}
+.sel-slogan p{
+    font-size: 14px;
+}
+/*slogan*/
+/*国家选择框*/
+.sel-country{
+    height: 100%;
+    line-height: 70px;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+}
+.sel-country .form-control{
+    display: inline-block;
+    width: 163px;
+    margin-right: 35px;
+
+}
+.sel-country .btn{
+    width: 103px;
+    color: #fff;
+    background-color: #0095FF;
+}
+.sel-country .btn:hover{
+    background-color: #0084e0;
+}
+/*国家选择框*/
+/*store*/
+.part1{
+    padding-top: 60px;
+    padding-bottom: 42px;
+    border-bottom: 1px solid #cacaca;
+}
+.part2{
+    padding-top: 60px;
+    padding-bottom: 109px;
+
+}
+.store .cap{
+    font-size: 36px;
+    font-weight: bold;
+    color: #0095FF;
+}
+.store .st-center span{
+    font-size: 14px;
+    color: #8F8F8F;
+}
+.store .st-center div{
+    margin-bottom: 20px;
+}
+/*store*/
+
+@media screen and (max-width: 990px){
+    .sel-slogan{
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .st-center{
+        margin-top: 20px;
+    }
+}
+.store .row{
+    margin: 0 auto;
+}
+
+.map-canvas {
+    height: 200px;
+    width: 350px;
+    margin: 0;
+    padding: 0;
+}
+
+

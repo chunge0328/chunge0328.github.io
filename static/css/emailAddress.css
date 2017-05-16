@@ -1,0 +1,230 @@
+/*中间导航开始*/
+.control-label.required:after {
+    color: #FF4D00;
+    content: "*";
+    position: relative;
+    top: 3px;
+    left: 5px;
+    display: inline-block;
+}
+.center-nav{
+    padding: 25px 0 25px 0;
+    background-color: #005b9a;
+}
+.center-nav li{
+    list-style-type: none;
+}
+.center-nav li {
+    text-decoration: none;
+    font-size: 16px;
+    color: #91A8B7;
+    cursor: default;
+}
+.center-nav li.active {
+    color: white;
+}
+/*中间导航结束*/
+label{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+.center-content{
+    height: 100%;
+    background-color: #f8f8f8;
+    padding: 61px 80px 64px 80px;
+}
+.center-content .cap1{
+    padding-bottom: 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #cacaca;
+}
+/*错误提示*/
+.center-content .paragraph{
+    font-size: 14px;
+    padding: 10px 28px 10px 20px;
+    margin-left: 315px;
+    background-color: #FFF5EF;
+    color: #FF3300;
+    display: none;
+}
+/*错误提示*/
+.information .left .down{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border:1px solid #cccccc;
+    padding:0px 64px 37px 43px;
+}
+.information .explain span{
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 13px;
+    color: #8E8E8E;
+}
+.information .down p{
+    margin-top: 22px;
+    margin-bottom: 34px;
+    font-size: 16px;
+    color: #000;
+}
+.information .right .down{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border:1px solid #cccccc;
+    padding:0px 64px 37px 43px;
+}
+.information .left .cap2{
+    margin-top: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 128px;
+}
+.information .right .checkbox{
+    margin-top:61px;
+    margin-bottom:40px;
+}
+.information .right .check{
+    font-size: 14px;
+    color: #000000;
+
+}
+.information .checkbox span{
+    padding-left:20px;
+    margin-top: 14px;
+    display: block;
+    font-size: 14px;
+    color: #0095FF;
+}
+.information .checkbox p{
+    font-size: 14px;    color: #0095FF;
+    padding-left:20px;
+    margin-top:10px;
+}
+.information .personInfom{
+    margin-bottom: 5px;
+}
+
+.information .firstN{
+    width: 46%;
+}
+.information .lastN{
+    width: 46%;
+}
+.information .email{
+    width: 46%;
+}
+.information .password{
+    width: 46%;
+}
+.information .zipCode{
+    width: 46%;
+}
+.information .state{
+    width: 46%;
+}
+.information .explain input{
+    width: 100%;
+    height: 130px;
+}
+.center-content .buttom{
+    margin: 0 auto;
+}
+.center-content button{
+    height: 100%;
+    padding: 10px 0 10px 0;
+    font-size: 16px;
+    font-weight:bold;
+    margin-top: 37px;
+    color: white;
+    background-color: #FF4D00;
+}
+.center-content button:hover{
+    color: white;
+    background-color: #e54600;
+}
+
+/*添加*号开始*/
+.form-group span{
+    color: #FF4D00;
+}
+.form-group i{
+    color: #FF4D00;
+}
+.form-group
+/*添加*号结束*/
+@media screen and (min-width: 1200px){
+    .information .left{
+        width:47%;
+        height: 100%;
+        margin-right: 60px;
+    }
+    .information .right{
+        width:47%;
+        height: 100%;
+    }
+    .center-content button{
+        width: 296px;
+        margin-left: 0px;
+    }
+    .container .center-nav .l2{
+        margin-left: 30px;
+    }
+    .container .center-nav .l3{
+        margin-left: 30px;
+    }
+    .container .center-nav .l4{
+        margin-left: 60px;
+    }
+
+}
+@media screen and (min-width: 996px){
+    .center-content button{
+        width: 296px;
+        margin-left: 0px;
+    }
+    .container .center-nav .l2{
+        margin-left: 30px;
+    }
+    .container .center-nav .l3{
+        margin-left: 30px;
+    }
+    .container .center-nav .l4{
+        margin-left: 60px;
+    }
+}
+@media screen and (max-width: 768px){
+    .center-content{
+        padding: 5px 5px 50px 5px;
+    }
+    .information .left .cap2{
+        margin-bottom: 40px;
+    }
+    .information .left .down{
+        padding:0px 10px 37px 10px;
+    }
+    .information .right .down{
+        padding:0px 10px 37px 10px;
+    }
+    /*错误提示*/
+    .center-content .paragraph{
+        height: 100%;
+        font-size: 11px;
+        padding: 10px 0 10px 0px;
+        margin-left: 0;
+        background-color: #FFF5EF;
+        color: #FF3300;
+        display: none;
+    }
+    /*错误提示*/
+
+}
+
+
+
+
+
+
+

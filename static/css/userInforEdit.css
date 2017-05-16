@@ -1,0 +1,89 @@
+/*给label后面加*号*/
+.control-label.required:after {
+    color: #FF4D00;
+    content: "*";
+    position: relative;
+    top: 3px;
+    left: 5px;
+    display: inline-block;
+}
+/*中间导航开始*/
+.container .breadcrumb{
+    height: 65px;
+    font-size:14px;
+    padding-left:40px;
+    line-height: 50px;
+}
+.container .breadcrumb a{
+    text-decoration: none;
+    color: #0096FF;
+}
+.container .breadcrumb .active{
+    color: #000;
+}
+/*中间导航结束*/
+/*中间左侧导航开始*/
+.nav-pills>li.active>a{
+    color: white;
+    font-size:14px;
+    background-color: #0095FF;
+}
+.nav-pills>li.active>a:hover{
+    color: white;
+    background-color: #0095FF;
+}
+a{
+    color: #0095FF;
+    font-size:14px;
+}
+/*中间左侧导航结束*/
+/*中间右侧内容开始*/
+/*cap*/
+label{
+    font-weight: 400;
+    color: #000000;
+}
+.center-right .cap{
+    height: 63px;
+    line-height: 63px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #cccccc;
+}
+/*cap*/
+.center-right .firstName{
+    margin-top: 27px;
+}
+.center-right .email{
+    position: relative;
+}
+.center-right .email span{
+    position: absolute;
+    left:99px;
+    top:3px;
+    color: #FF4D00;
+}
+.center-right .btn{
+    font-size: 16px;
+    font-weight: bold;
+    width: 109px;
+    height: 50px;
+    color: white;
+    background-color: #0095FF;
+}
+.center-right a{
+    color: #3FB0FF;
+}
+
+/*中间右侧内容结束*/
+@media screen and (max-width: 550px){
+    .information .psd{
+        display: inline-block;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 321px){
+    .container .breadcrumb{
+        font-size:12px;
+    }
+}

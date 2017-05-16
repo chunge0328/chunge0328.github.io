@@ -1,0 +1,88 @@
+.control-label.required:after {
+    color: #FF4D00;
+    content: "*";
+    position: relative;
+    top: 3px;
+    left: 5px;
+    display: inline-block;
+}
+/*中间导航开始*/
+.container .breadcrumb{
+    height: 65px;
+    font-size:14px;
+    padding-left:40px;
+    line-height: 50px;
+}
+.container .breadcrumb a{
+    color: #0096FF;
+}
+.container .breadcrumb .active{
+    color: #000;
+}
+/*中间导航结束*/
+/*中间内容开始*/
+/*cap*/
+label{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+.center-content{
+    height: 100%;
+    background-color: #F5F5F5;
+    margin:0 auto;
+    padding: 36px 0px 45px 80px;
+}
+.center-content .cap{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 39px;
+}
+@media screen and (max-width: 321px){
+    .center-content .btn{
+        width: 150px!important;
+    }
+}
+@media screen and (max-width: 550px){
+    .center-content{
+        height: 100%;
+        background-color: #F5F5F5;
+        margin:0 auto;
+        padding: 10px 10px 10px 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    .center-content{
+        height: 100%;
+        background-color: #F5F5F5;
+        margin:0 auto;
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+@media screen and (min-width: 996px){
+    .center input{
+        width: 50%;
+    }
+}
+.center-content .buttom{
+    margin-top:30px;
+}
+.center-content .btn{
+     font-size: 16px;
+     font-weight: bold;
+     width: 185px;
+     height: 50px;
+     color: white;
+     margin-right: 7px;
+     background-color: #FF4D00;
+ }
+.center-content .btn:hover{
+    background-color: #e54600;
+}
+.center-content a{
+    color: #0095FF;
+}
+
+
+/*中间内容结束*/

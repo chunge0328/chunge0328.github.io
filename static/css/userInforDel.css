@@ -1,0 +1,88 @@
+/*中间导航开始*/
+.container .breadcrumb{
+    height: 65px;
+    font-size:14px;
+    padding-left:40px;
+    line-height: 50px;
+}
+.container .breadcrumb a{
+    color: #0096FF;
+}
+.container .breadcrumb .active{
+    color: #000;
+}
+/*中间导航结束*/
+/*中间左侧导航开始*/
+.nav-pills>li.active>a{
+    color: white;
+    font-size:14px;
+    background-color: #0095FF;
+}
+.nav-pills>li.active>a:hover{
+    color: white;
+    background-color: #0095FF;
+}
+a{
+    color: #0095FF;
+    font-size:14px;
+}
+/*中间左侧导航结束*/
+/*中间右侧内容开始*/
+/*cap*/
+.center-right .cap{
+    height: 63px;
+    line-height: 63px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #cccccc;
+}
+/*cap*/
+.center-right p{
+    font-size: 16px;
+    margin-top:25px;
+    margin-bottom: 37px;
+}
+.center-right .cap1{
+    font-size: 16px;
+    color: #FF4E00;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.center-right .btn{
+    font-size: 16px;
+    font-weight: bold;
+    width: 109px;
+    height: 50px;
+    color: white;
+    background-color: #FF4D00;
+}
+.center-right .btn:hover{
+    background-color: #e54600;
+}
+.center-right a{
+    text-decoration: none;
+    color: #3FB0FF;
+}
+.center-right .paragraph{
+    height: 100%;
+    padding:22px 0 19px 16px;
+    background-color: #FFF1D5;
+    margin-bottom: 21px;
+}
+
+.center-right .paragraph span{
+    font-size: 16px;
+    display: block;
+    color: #FF4E00;
+}
+/*中间右侧内容结束*/
+@media screen and (max-width: 321px){
+    .container .breadcrumb{
+        font-size:12px;
+    }
+}
+@media screen and (max-width: 550px){
+   .center-right{
+       margin-bottom: 40px;
+   }
+}

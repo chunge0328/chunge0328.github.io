@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    padding: 0;
+
+}
+.tab-swiper {
+    width: 100%;
+    height: 72px;
+    position: relative;
+    padding: 0 25px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+}
+.tab-swiper .sell-prev,.tab-swiper .sell-next {
+    position: absolute;
+    z-index:2;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    height: 71px;
+    line-height: 71px;
+    width: 25px;
+    opacity: 1;
+    color: #fff;
+    cursor: pointer;
+    background: #fff;
+}
+.tab-swiper:hover .sell-prev, .tab-swiper:hover .sell-next{
+    color: #ccc;
+}
+.tab-swiper .sell-next {
+    right: 0;
+    left: auto;
+}
+.tab-swiper .tab {
+    height: 70px;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.tab li {
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 70px;
+    line-height: 34px;
+    text-align: center;
+    cursor: pointer;
+    border-top: 4px solid #fff;
+}
+
+.tab span {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background: #ddd;
+    width: 1px;
+    height: 14px;
+    overflow: hidden;
+}
+.products {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.products .main {
+    float: left;
+    display: none;
+}
+
+.products .main.selected {
+    display: block;
+}
+
+.tab li.active {
+    border-color: #2683FC;
+    border-bottom: 0;
+}
+
+/*search*/
+@media screen and (min-width: 768px) {
+    .search-nav {
+        width: auto;
+        height: 100px;
+        background-color: #E7F5FF;
+        position: relative;
+    }
+    .sel-nav {
+        position: absolute;
+        left: 50%;
+        margin-left: -300px;
+    }
+
+    .navbar-nav .active {
+        margin-right: 60px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .search-nav {
+        width: auto;
+        height: auto;
+        background-color: #E7F5FF;
+    }
+    .sel-country {
+        display: block;
+        height: 70px;
+        line-height: 70px;
+        border-top: 1px solid #cacaca;
+        border-bottom: 1px solid #cacaca;
+    }
+}
+
+.search-nav a {
+    color: #000;
+}
+
+.navbar-nav li.active a {
+    background-color: #eee;
+}
+
+/*search*/
+/*slogan*/
+.sel-slogan {
+    padding: 57px 0 28px 0;
+    /*border-bottom: 1px solid #cacaca;*/
+}
+
+.sel-slogan .cap {
+    font-size: 30px;
+}
+
+.sel-slogan p {
+    font-size: 14px;
+}
+
+/*slogan*/
+/*国家选择框*/
+.sel-country {
+    height: 70px;
+    line-height: 70px;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+}
+
+.sel-country .form-control {
+    display: inline-block;
+    width: 163px;
+
+}
+
+.sel-country .btn {
+    width: 103px;
+    color: #fff;
+    background-color: #0095FF;
+}
+
+.sel-country .btn:hover {
+    background-color: #0084e0;
+}
+
+/*国家选择框*/
+/*名片*/
+.sel-card {
+    height: 100%;
+    padding: 46px 0 84px 0;
+}
+
+.sel-card .card {
+    height: 100%;
+    border: 1px solid #cacaca;
+    margin-bottom: 54px;
+    padding: 38px 0 28px 0;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+}
+.sel-card .card .pull-right {
+    margin-top: 40px;
+}
+
+.sel-card .card .cap {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.sel-card .card p {
+    margin: 0;
+    padding: 0;
+}
+
+.sel-card .card .p1 {
+    font-size: 11px;
+    width: 208px;
+    word-wrap: break-word;
+}
+
+.sel-card .card .p2 {
+    font-size: 12px;
+}
+
+.sel-card .card .p1 {
+    font-size: 11px;
+}
+
+.sel-card .card .p2 {
+    font-size: 12px;
+    width: 208px;
+    word-wrap: break-word;
+}
+.sel-card .card .p3 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 208px;
+    word-wrap: break-word;
+}
+
+.sel-card .card .sel-icon2 {
+    display: none;
+}
+
+/*名片*/
+@media screen and (min-width: 1200px) {
+    .sel-card .card {
+        padding: 38px 20px 28px 20px;
+    }
+}
+@media screen and (min-width: 990px) {
+    .sel-all {
+        display: none;
+    }
+}
+@media (max-width: 1170px) {
+    .tab-swiper {
+        padding: 0 5px;
+    }
+    .tab-swiper .sell-prev, .tab-swiper .sell-next {
+        width: 10px;
+    }
+    .tab-swiper .sell-next {
+        right: 5px;
+        left: auto;
+    }
+}
+@media screen and (max-width: 990px) {
+    .sel-slogan {
+        padding: 20px;
+    }
+
+    .sel-card {
+        padding: 20px;
+    }
+
+    .sel-card .row {
+        margin: 0 auto;
+    }
+
+    .sel-card .card {
+        padding: 38px 50px 28px 50px;
+    }
+    .wrapper {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .sel-card .row {
+        margin: 0 auto;
+    }
+
+    .sel-card .card {
+        padding: 38px 20px 28px 20px;
+
+    }
+
+    .sel-card .card img {
+        width: 35%;
+        height: 80%;
+    }
+
+    .sel-card .card .sel-icon1 {
+        display: none;
+    }
+
+    .sel-card .card .sel-icon2 {
+        display: block;
+    }
+
+    .sel-card .card .pull-right {
+
+        margin-top: 20px;
+    }
+}

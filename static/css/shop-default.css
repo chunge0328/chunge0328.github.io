@@ -1,0 +1,33 @@
+.header .navbar-static-top {
+    padding: 25px 0;
+    background-color: #005b9a;
+    border:0
+}
+.page .page_inner {
+    background: #f8f8f8;
+    border: 0;
+    border-radius: 0;
+    padding: 60px 80px 37px;
+    box-shadow:none;
+}
+.page .well {
+    background: #fff;
+    border: 0;
+    border-radius: 0;
+}
+.page_inner .btn-primary {
+    background-color: #FF4D00;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 25%;
+    border: 0;
+}
+.page_inner .btn-primary:hover{
+    background-color: #e54600;
+}
+@media all and (max-width: 760px){
+    .page .page_inner {
+        padding: 0;
+    }
+}

@@ -1,0 +1,75 @@
+/*中间导航开始*/
+.breadcrumb {
+    height: 65px;
+    font-size: 14px;
+    padding-left: 40px;
+    line-height: 50px;
+}
+
+.breadcrumb a {
+    color: #0096FF;
+}
+
+.breadcrumb .active {
+    color: #000;
+}
+
+.breadcrumb {
+    background-color: #ffffff;
+    margin-bottom: 0;
+}
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #000;
+    content: ">";
+}
+
+/*中间导航结束*/
+/*中间内容开始*/
+.down-bg {
+    width: 100%;
+    height: 1080px;
+    background-image: url("../img/downloadCenter/qbg.jpg");
+}
+.content .cap{
+    /*width: 40%;*/
+    margin: 105px 0 16px 0;
+    font-size: 48px;
+    color: #000;
+}
+.content span{
+    font-size: 14px;
+    color: #FFFFFF;
+}
+@media screen and (max-width: 550px){
+    .content .cap{
+        margin: 30px 0 30px 0;
+    }
+}
+.form-control{
+    width: 70%;
+    background:rgba(0, 0, 0, 0);
+    border: 1px solid #000000;
+}
+.form-group{
+    margin-bottom: 180px;
+}
+@media screen and (max-width: 550px){
+    .content .cap{
+        font-size: 24px;
+        margin: 30px 0 30px 0;
+    }
+    .form-control{
+        width: 80%;
+    }
+    .down-bg {
+        width: 100%;
+        height: 1080px;
+        background-image: url("../img/downloadCenter/beijing.jpg");
+    }
+    .form-group{
+        margin-bottom: 80px;
+    }
+}
+
+/*中间内容结束*/
